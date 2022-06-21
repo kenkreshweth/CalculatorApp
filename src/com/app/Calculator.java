@@ -31,7 +31,23 @@ public void power()
 	}
 	R=f;
 }
-
+public void percentage() {
+	int arr[],sum=0,x;
+	float perc;
+	arr=new int[5];
+	System.out.println("enter the marks for the 5 subjects");
+	for(int i=0;i<arr.length-1;i++) {
+		x= s.nextInt();
+		arr[i]=x;
+	}
+	System.out.println("The sum is :");
+	for(int i=0;i<arr.length-1;i++) {
+		sum=sum+arr[i];
+	}
+	System.out.println(sum);
+	perc=(sum*100)/500;
+	System.out.println("Percentage is: "+perc);
+}
 public void display()
 {
 	//System.out.println("Power");
@@ -74,6 +90,11 @@ public static void main(String[] args)
 			m.init(X, Y);
 			m.power();
 			m.display();
+			break;
+		}
+		case 'D':
+		{
+			m.percentage();
 			break;
 		}
 		default: 
