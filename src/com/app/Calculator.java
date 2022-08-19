@@ -1,6 +1,6 @@
-package com.app;
+/*package com.app;
 import java.lang.Math;
-import java.util.Scanner;
+import java.util.Scanner;*/
 
 public class Calculator {
 private static int X,Y;
